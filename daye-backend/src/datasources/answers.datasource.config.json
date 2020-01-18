@@ -1,0 +1,6 @@
+{
+  "name": "answers",
+  "connector": "memory",
+  "localStorage": "",
+  "file": "./data/answers.json"
+}

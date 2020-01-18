@@ -1,0 +1,314 @@
+{
+  "ids": {
+    "Questions": "Questions"
+  },
+  "models": {
+    "Questions": {
+      "0": {
+        "id": "0",
+        "idName": "age",
+        "title": "When were you born?",
+        "subtitle": "You must be over 18",
+        "placeholder": "DD / MM / YY",
+        "type": "datePicker",
+        "minYears": 18
+      },
+      "1": {
+        "id": "1",
+        "idName": "smokingA",
+        "title": "Do you smoke cigarettes?",
+        "type": "table",
+        "dependancies": [
+          {
+            "type": "age",
+            "allowedRanges": [
+              {
+                "minYears": 18,
+                "maxYears": 34
+              },
+              {
+                "minYears": 40,
+                "maxYears": 100
+              }
+            ]
+          }
+        ],
+        "answerOptions": [
+          {
+            "id": 1,
+            "title": "No",
+            "weight": 1
+          },
+          {
+            "id": 2,
+            "title": "Yes",
+            "weight": 500
+          }
+        ]
+      },
+      "2": {
+        "id": "2",
+        "idName": "smokingB",
+        "title": "Do you smoke cigarettes, or have previously smoked cigarettes?",
+        "type": "table",
+        "dependancies": [
+          {
+            "type": "age",
+            "allowedRanges": [
+              {
+                "minYears": 35,
+                "maxYears": 39
+              }
+            ]
+          }
+        ],
+        "answerOptions": [
+          {
+            "id": 1,
+            "title": "No",
+            "weight": 1
+          },
+          {
+            "id": 2,
+            "title": "Yes",
+            "weight": 1000
+          },
+          {
+            "id": 3,
+            "title": "Yes, I quit more than 1 year ago",
+            "weight": 500
+          },
+          {
+            "id": 4,
+            "title": "Yes, I quit less than 1 year ago",
+            "weight": 1000
+          }
+        ]
+      },
+      "3": {
+        "id": "3",
+        "idName": "preg",
+        "title": "Are you pregnant?",
+        "type": "table",
+        "answerOptions": [
+          {
+            "id": 1,
+            "title": "No",
+            "weight": 1
+          },
+          {
+            "id": 2,
+            "title": "Yes",
+            "weight": 1000
+          }
+        ]
+      },
+      "4": {
+        "id": "4",
+        "idName": "baby",
+        "title": "Have you had a baby in the last 6 months?",
+        "type": "table",
+        "answerOptions": [
+          {
+            "id": 1,
+            "title": "No",
+            "weight": 1
+          },
+          {
+            "id": 2,
+            "title": "Yes",
+            "weight": 1000
+          }
+        ]
+      },
+      "5": {
+        "id": "5",
+        "idName": "clot",
+        "title": "Have you, a biological parent or sibling ever had a blood clot?",
+        "subtitle": "This would include deep vein thrombosis (DVT), stroke, and pulmonary embolism (PE or blood clot in the lung).",
+        "type": "table",
+        "answerOptions": [
+          {
+            "id": 1,
+            "title": "No",
+            "weight": 1
+          },
+          {
+            "id": 2,
+            "title": "Parent or sibling over the age of 45",
+            "weight": 500
+          },
+          {
+            "id": 3,
+            "title": "Parent or sibling under the age of 45",
+            "weight": 1000
+          },
+          {
+            "id": 4,
+            "title": "Yes, I have had a blood clot",
+            "weight": 1000
+          }
+        ]
+      },
+      "6": {
+        "id": "6",
+        "idName": "conditions",
+        "title": "Do you have any of these conditions?",
+        "type": "tableMulti",
+        "answerOptions": [
+          {
+            "id": 1,
+            "title": "Superficial thrombophlebitis",
+            "weight": 500
+          },
+          {
+            "id": 2,
+            "title": "Sickle cell disease",
+            "weight": 500
+          },
+          {
+            "id": 3,
+            "title": "Inflammatory bowel disease/Ulcerative colitis/Crohn's disease",
+            "weight": 500
+          },
+          {
+            "id": 4,
+            "title": "Cholestasis of pregnancy",
+            "weight": 500
+          },
+          {
+            "id": 5,
+            "title": "Previous gallbladder surgery",
+            "subtitle": "(cholecystectomy)",
+            "weight": 500
+          },
+          {
+            "id": 6,
+            "title": "Long QT syndrome",
+            "weight": 500
+          },
+          {
+            "id": 7,
+            "title": "Hyperlipidemia",
+            "weight": 500
+          },
+          {
+            "id": 8,
+            "title": "Current or history of cancer",
+            "weight": 1000
+          },
+          {
+            "id": 9,
+            "title": "Carrier of BRCA gene mutation",
+            "weight": 1000
+          },
+          {
+            "id": 10,
+            "title": "Breast mass under investigation",
+            "weight": 1000
+          },
+          {
+            "id": 11,
+            "title": "Gestational trophoblastic neoplasia",
+            "weight": 1000
+          },
+          {
+            "id": 12,
+            "title": "Symptomatic gallbladder disease",
+            "weight": 1000
+          },
+          {
+            "id": 13,
+            "title": "Cholestasis/gallbladder disease from previous contraceptives",
+            "weight": 1000
+          },
+          {
+            "id": 14,
+            "title": "Viral hepatitis (active)",
+            "weight": 1000
+          },
+          {
+            "id": 15,
+            "title": "Cirrhosis",
+            "weight": 1000
+          },
+          {
+            "id": 16,
+            "title": "Liver tumours",
+            "weight": 1000
+          },
+          {
+            "id": 17,
+            "title": "Immobility",
+            "subtitle": "(wheelchair/bed-bound)",
+            "weight": 1000
+          },
+          {
+            "id": 18,
+            "title": "Raynaud's disease",
+            "weight": 1000
+          },
+          {
+            "id": 19,
+            "title": "Cardiomyopathy",
+            "weight": 1000
+          },
+          {
+            "id": 20,
+            "title": "Atrial fibrillation",
+            "weight": 1000
+          },
+          {
+            "id": 21,
+            "title": "Current and history of IHD",
+            "weight": 1000
+          },
+          {
+            "id": 22,
+            "title": "Stroke",
+            "weight": 1000
+          },
+          {
+            "id": 23,
+            "title": "Valvular heart disease",
+            "weight": 1000
+          },
+          {
+            "id": 24,
+            "title": "Congenital heart disease",
+            "weight": 1000
+          },
+          {
+            "id": 25,
+            "title": "Peripheral Vascular Disease",
+            "weight": 1000
+          },
+          {
+            "id": 26,
+            "title": "Clotting disorder",
+            "weight": 1000
+          }
+        ]
+      },
+      "7": {
+        "id": "7",
+        "idName": "tests",
+        "title": "Are you currently undergoing any tests or are you waiting for a diagnosis from your doctor?",
+        "subtitle": "We don’t want to pry, but better safe than sorry.",
+        "type": "table",
+        "answerOptions": [
+          {
+            "id": 1,
+            "title": "No",
+            "weight": 1
+          },
+          {
+            "id": 2,
+            "title": "Yes",
+            "weight": 1000
+          }
+        ]
+      }
+    }
+  }
+}
